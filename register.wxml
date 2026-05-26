@@ -1,0 +1,30 @@
+<view class="register-page">
+  <view class="logo-box">
+    <image class="logo" src="/images/logo.png"></image>
+  </view>
+
+  <view class="form-box">
+    <input class="input-item" placeholder="请输入手机号" />
+    <input class="input-item" password placeholder="请输入密码" />
+
+    <view class="code-row">
+      <input class="code-input" placeholder="请输入验证码" />
+      <view class="code-btn">获取验证码</view>
+    </view>
+
+    <view class="register-btn">注册</view>
+
+    <view class="back-login" bindtap="goBack">返回登录</view>
+
+    <view class="line-box">
+      <view class="line"></view>
+      <text class="line-txt">其他登录方式</text>
+      <view class="line"></view>
+    </view>
+
+    <view class="social-box">
+      <image class="icon" src="/images/wechat.png" bindtap="wxLogin"></image>
+      <image class="icon" src="/images/qq.png"></image>
+    </view>
+  </view>
+</view>

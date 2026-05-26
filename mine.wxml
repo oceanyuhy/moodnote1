@@ -1,0 +1,21 @@
+<view class="mine-page">
+  <!-- 顶部用户信息卡片（自动显示微信头像+昵称） -->
+  <view class="user-card" bindtap="goProfile">
+    <image class="avatar" src="{{avatar}}"></image>
+    <text class="nickname">{{nickname}}</text>
+  </view>
+  <!-- 设置 / 退出登录按钮 -->
+  <view class="menu-item" bindtap="showActionSheet">
+    <text>设置 / 退出登录</text>
+  </view>
+
+  <!-- 底部弹出层 -->
+  <view class="action-sheet {{showSheet ? 'show' : ''}}">
+    <view class="mask" bindtap="hideSheet"></view>
+    <view class="sheet-body">
+      <view class="item" bindtap="logout">退出登录</view>
+      <view class="item delete" bindtap="deleteAccount">注销账户</view>
+      <view class="item cancel" bindtap="hideSheet">取消</view>
+    </view>
+  </view>
+</view>

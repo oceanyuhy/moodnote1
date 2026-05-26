@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "心情广场",
+  "navigationBarBackgroundColor": "#ff95b6",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

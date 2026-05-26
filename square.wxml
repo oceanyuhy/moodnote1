@@ -1,0 +1,42 @@
+<view class="square-page">
+
+<!-- 顶部双排功能按钮：蒙面派对 + 待开发 -->
+<view class="top-tabs">
+  <view class="tab-item">蒙面派对</view>
+  <view class="tab-item wait">待开发</view>
+</view>
+
+<!-- 心情纸条列表 -->
+<view class="note-list">
+  <view class="note-card" wx:for="{{noteList}}" wx:key="_id">
+    <view class="card-top">
+      <image class="avatar" src="/images/avatar.png"></image>
+      <view class="user-info">
+        <view class="user-id">匿名用户</view>
+        <view class="user-loc">未知地区</view>
+      </view>
+      <view class="follow-btn">关注</view>
+    </view>
+
+    <view class="card-content">
+      <text class="content-text">{{item.content}}</text>
+      <view class="multi-img" wx:if="{{item.picUrls && item.picUrls.length>0}}">
+        <image wx:for="{{item.picUrls}}" wx:key="index" src="{{item}}" class="img-item"></image>
+      </view>
+    </view>
+
+    <view class="card-bottom">
+      <view class="like-btn">
+        <text class="icon">♡</text>
+        <text>{{item.likes}}</text>
+      </view>
+      <view class="comment-btn">
+        <text class="icon">✎</text>
+        <text>评论</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="float-btn" bindtap="goPublish">+</view>
+</view>

@@ -1,0 +1,134 @@
+page {
+  background-color: #fef5f8;
+}
+.square-page {
+  padding: 20rpx;
+  padding-bottom: 120rpx;
+}
+
+/* ========== 顶部双排功能按钮 ========== */
+.top-tabs {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 30rpx;
+  height: 25vh; /* 1/4 屏幕高度 */
+}
+.tab-item {
+  flex: 1;
+  background: linear-gradient(135deg, #ff95b6, #ff5a8c);
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 500;
+  box-shadow: 0 6rpx 20rpx rgba(255,90,140,0.15);
+}
+.tab-item.wait {
+  background: #cccccc;
+  color: #fff;
+}
+
+/* ========== 纸条列表 ========== */
+.note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25rpx;
+}
+.note-card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  box-shadow: 0 6rpx 20rpx rgba(255, 90, 140, 0.08);
+}
+.card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25rpx;
+}
+.avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background: #eee;
+  margin-right: 20rpx;
+}
+.user-info {
+  flex: 1;
+}
+.user-id {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6rpx;
+}
+.user-loc {
+  font-size: 22rpx;
+  color: #999;
+}
+.follow-btn {
+  padding: 10rpx 22rpx;
+  border-radius: 50rpx;
+  background: #fff;
+  border: 1rpx solid #ff5a8c;
+  color: #ff5a8c;
+  font-size: 24rpx;
+}
+.card-content {
+  margin-bottom: 25rpx;
+}
+.content-text {
+  font-size: 28rpx;
+  color: #555;
+  line-height: 1.6;
+  display: block;
+  margin-bottom: 20rpx;
+}
+.multi-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+  margin-top: 10rpx;
+}
+.img-item {
+  width: 210rpx;
+  height: 210rpx;
+  border-radius: 12rpx;
+  object-fit: cover;
+}
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #f8f8f8;
+}
+.like-btn, .comment-btn {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.icon {
+  color: #eeeeee;
+  font-size: 30rpx;
+}
+
+/* 悬浮发布按钮 */
+.float-btn {
+  position: fixed;
+  right: 30rpx;
+  bottom: 120rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff87a2, #ff5a8c);
+  color: #fff;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8rpx 20rpx rgba(255,90,140,0.3);
+  z-index: 99;
+}

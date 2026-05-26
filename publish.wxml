@@ -1,0 +1,22 @@
+<view class="publish">
+  <view class="pub-head">
+    <view class="cancel" bindtap="goBack">取消</view>
+    <view class="publish-btn" bindtap="doPublish">发布</view>
+  </view>
+
+  <view class="input-box">
+    <textarea class="input" placeholder="分享你的心情..." value="{{content}}" bindinput="onInput"></textarea>
+  </view>
+
+  <view class="img-box">
+    <view class="img-item" wx:for="{{imgList}}" wx:key="index">
+      <image src="{{item}}" mode="aspectFill"></image>
+      <view class="del" bindtap="delImg" data-index="{{index}}">×</view>
+    </view>
+    <view class="add-img" wx:if="{{imgList.length < 9}}" bindtap="addImg">+</view>
+  </view>
+
+  <view class="line"></view>
+  <view class="item" bindtap="noDev">提醒谁看</view>
+  <view class="item" bindtap="noDev">谁可以看</view>
+</view>

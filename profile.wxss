@@ -1,0 +1,15 @@
+.page { padding: 20rpx; }
+.item {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.label { font-size: 32rpx; }
+.right { display: flex; align-items: center; gap: 20rpx; }
+.ava { width: 60rpx; height: 60rpx; border-radius: 50%; }
+.val { font-size: 30rpx; color: #666; }
+.arrow { font-size: 34rpx; color: #999; }

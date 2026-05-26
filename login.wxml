@@ -1,0 +1,33 @@
+<view class="login-page">
+  <view class="top-banner-box">
+    <image class="top-banner" src="/images/logo.png"></image>
+  </view>
+
+  <view class="form-box">
+    <input class="input-item" placeholder="输入你的账号/用户名" />
+    <input class="input-item" password placeholder="输入你的密码" />
+
+    <view class="forget-row">
+      <text class="forget-txt">忘记密码？</text>
+    </view>
+
+    <view class="login-btn" bindtap="login">登录</view>
+
+    <view class="register-row">
+      <view class="register-btn" bindtap="goRegister">注册账号</view>
+    </view>
+
+    <view class="line-box">
+      <view class="line"></view>
+      <text class="line-txt">其他登录方式</text>
+      <view class="line"></view>
+    </view>
+
+    <!-- 把你原来的微信图标，替换成这个官方授权按钮 -->
+    <view class="social-box">
+      <button class="wx-login-btn" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        微信一键登录
+      </button>
+    </view>
+  </view>
+</view>
